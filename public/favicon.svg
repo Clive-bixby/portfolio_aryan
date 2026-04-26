@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Aryan Yadav">
+  <rect width="64" height="64" rx="14" fill="#051424"/>
+  <path d="M18 46 30 18h4l12 28h-6l-2.5-6.5h-15L20 46h-2Zm6.5-11.5h11L30 21l-5.5 13.5Z" fill="#3cddc7"/>
+  <path d="M17 48h30" stroke="#7bd0ff" stroke-width="3" stroke-linecap="round"/>
+</svg>
