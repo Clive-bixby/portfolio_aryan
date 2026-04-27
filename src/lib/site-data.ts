@@ -1,4 +1,5 @@
 import {
+  Activity,
   BadgeCheck,
   BrainCircuit,
   Cloud,
@@ -85,6 +86,15 @@ export const skillGroups = [
 ];
 
 export const projects = [
+  {
+    name: "OpsPilot AI",
+    icon: Activity,
+    summary:
+      "An AI-powered observability platform that analyzes logs, tickets, and internal docs to detect incidents and answer operational queries with LLMs.",
+    impact:
+      "Built a context-grounded RAG pipeline with pgvector retrieval, source citations, async workers, JWT auth, RBAC, multi-tenant isolation, Docker, and cloud deployment.",
+    tech: ["LLMs", "RAG", "pgvector", "Async Workers", "JWT", "Docker"]
+  },
   {
     name: "NarrativeNode",
     icon: FileText,
