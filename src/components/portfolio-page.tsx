@@ -340,10 +340,10 @@ export function PortfolioPage() {
         <SectionHeading
           eyebrow="Featured Projects"
           title="Architectural projects with recruiter-readable impact."
-          description="Three full-stack builds showing authentication, data workflows, scalable backend design, cloud readiness, and AI-assisted product thinking."
+          description="Full-stack and AI systems showing authentication, data workflows, scalable backend design, cloud readiness, and product-focused engineering."
           icon={<BriefcaseBusiness size={22} />}
         />
-        <Stagger className="mt-10 grid gap-6 lg:grid-cols-3">
+        <Stagger className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {projects.map((project) => {
             const Icon = project.icon;
             return (
@@ -372,17 +372,21 @@ export function PortfolioPage() {
                       </span>
                     ))}
                   </div>
-                  <div className="mt-7">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="focus-ring inline-flex w-full items-center justify-center gap-2 border border-border-soft px-3 py-2.5 font-mono text-xs uppercase tracking-[0.13em] text-foreground transition hover:border-tertiary/55 hover:bg-surface-high"
-                    >
-                      GitHub
-                      <ExternalLink size={14} />
-                    </a>
-                  </div>
+                  {project.githubUrl ? (
+                    <div className="mt-7">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="focus-ring inline-flex w-full items-center justify-center gap-2 border border-border-soft px-3 py-2.5 font-mono text-xs uppercase tracking-[0.13em] text-foreground transition hover:border-tertiary/55 hover:bg-surface-high"
+                      >
+                        GitHub
+                        <ExternalLink size={14} />
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="mt-7 h-[42px]" aria-hidden="true" />
+                  )}
                 </MotionDiv>
               </StaggerItem>
             );
