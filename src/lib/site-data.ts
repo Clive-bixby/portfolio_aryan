@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const links = {
-  resume: "/resume/Aryan_Yadav_Software_Engineer.pdf",
+  resume: "https://drive.google.com/file/d/11TruqFt5uWrX7L5WSZEpDmJz3wxf-Cbl/view?usp=sharing",
   emailAddress: "aryansecondmail@gmail.com",
   email:
     "https://mail.google.com/mail/?view=cm&fs=1&to=aryansecondmail@gmail.com&su=Opportunity%20for%20Aryan%20Yadav",
